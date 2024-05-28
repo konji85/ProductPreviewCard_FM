@@ -8,6 +8,9 @@ body{ margin:0;
       font-size: 14px;
       font-family: 'Montserrat';
       font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
      }
 
 
@@ -85,14 +88,15 @@ body{ margin:0;
 .btn_cart img{width:1rem; margin:0.5rem 1rem;}
 .btn_cart:hover{ background-color:  hsl(158, 36%, 17%); cursor: pointer;}
 
-@media (min-width:500px){
+@media (min-width:576px){
                         body{width: 1440px;}
             .container{
                         display: grid;
                         grid-template-columns: repeat(2,1fr);
                         padding: 0;
-                        width: 576px;
+                        max-width: 576px;
                         border: 1p solid seagreen;
+                        margin:10% auto ;
                         
             }
             .image-container {margin: 0; padding: 0;}
